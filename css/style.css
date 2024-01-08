@@ -1,0 +1,383 @@
+.body{/*user agent sheetの解除が面倒なのでbodyタグにbodyクラスを指定*/
+    margin:0;
+}
+.PIC_CENTERCONTROLL{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+
+/*section1*/
+.Header_Text{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem 0rem 1rem 0rem;
+}
+.CENTERCONTROLL_HEAD{
+    width:1200px;
+    margin-left: 1%;
+}
+.Header_Text_Title{
+    font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+    font-size: 26px;
+    font-weight: lighter;
+    margin: 0;
+}
+@media screen and (max-width:424px){
+    .CENTERCONTROLL_HEAD{
+        text-align: center;
+    }
+}
+
+/*section2*/
+.Header{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 0.3rem;
+}
+.CENTERCONTROLL_HEAD2{
+    width:1200px;
+    padding-left: 0;
+}
+.CENTERCONTROLL_HEAD2_wrap{
+    margin-left: 1%;
+    display: flex;
+    flex-direction: row;
+}
+.Header_Content{
+    margin: 0.5rem 6rem 0.5rem 0rem;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+}
+@media screen and (max-width:768px){
+    .Header_Content{
+        margin: 0.5rem 2rem 0.5rem 0rem;
+        font-size: 12px;
+        text-decoration: none;
+        color: white;
+    }
+}
+@media screen and (max-width:424px){
+    .CENTERCONTROLL_HEAD2_wrap{
+        margin-left: 1%;
+        display: flex;
+        flex-direction: column;
+    }
+    .Header_Content{
+        margin: 0.1rem 0rem 0.1rem 0rem;
+        font-size: 12px;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+    }
+}
+
+/*section3*/
+.CENTERCONTROLL_MAIN{
+    display: flex;
+    justify-content: center;
+}
+.CENTERCONTROLL_MAIN_INNER{
+    width:100%;
+    max-width:1200px;
+}
+.Contents_Above_Cover{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.Contents_Above{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1% 1rem 1%;
+}
+.Picture_Contents_Above{
+    max-width: 100%;
+    margin: auto;
+}
+.h1{/*user agent sheetの解除が面倒なのでhタグに同名のクラスを指定*/
+    font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    text-align: center;
+}
+.Picture_Contents_Above_href{
+    font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    color: black;
+    text-align: center;
+}
+@media screen and (max-width:768px){
+    .Contents_Above_Cover{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .Picture_Contents_Above{
+        max-width: 90vw;
+    }
+}
+
+/*section4*/
+.Contents_Below_Cover{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:100%;
+    max-width: 1200px;
+}
+@media screen and (max-width:768px){
+    .Contents_Below_Cover{
+        display: flex;
+        flex-direction: column;
+    }
+}
+/*section4 left*/
+.Contents_Below_Left_Cover{
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    width:70%;
+    max-width: 840px;
+    margin: 1%;
+}
+@media screen and (max-width:768px){
+    .Contents_Below_Left_Cover{
+        width:100%;
+        margin: 0;
+    }
+}
+.Contents_Below_Left{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0rem 2rem 0rem;
+}
+.h2{/*user agent sheetの解除が面倒なのでhタグに同名のクラスを指定*/
+    font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+    font-size: 20px;
+    margin: 0.2rem 0rem 0.2rem 0rem;
+}
+.h3{/*user agent sheetの解除が面倒なのでhタグに同名のクラスを指定*/
+    font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+    font-size: 12px;
+    font-weight: lighter;
+    margin: 0.1rem 0rem 0.1rem 0rem;
+}
+.Picture_Contents_Below_Left{
+    width: auto;
+    object-fit: contain;
+}
+.h4{/*user agent sheetの解除が面倒なのでhタグに同名のクラスを指定*/
+    font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    margin: 0.2rem 1rem 0.2rem 0rem;
+    margin-right: 0;
+}
+.Contents_Below_Left_href{
+    font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    margin: 0.2rem 0rem 0.2rem 0rem;
+    color: black;
+    text-align: center;
+}
+/*section4 right*/
+.Contents_Below_Right_Cover{
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    width:30%;
+    max-width: 360px;
+    margin: 1%;
+}
+@media screen and (max-width:768px){
+    .Contents_Below_Right_Cover{
+        flex-basis: 100%;
+        width:100%;
+        margin: auto;
+    }
+}
+.Contents_Below_Right_NAME_Cover{
+    display: flex;
+    flex-direction: column;
+    margin-top:3rem;
+}
+.Contents_Below_Right_RANKING_Cover{
+    display: flex;
+    flex-direction: column;
+    margin-top:3rem;
+}
+.Contents_Below_Right_RANKING_List_Cover{
+    display: flex;
+    justify-content: center;
+}
+.Contents_Below_Right_RANKING_List{
+    display: flex;
+    flex-direction: column;
+}
+.Contents_Below_Right_RANKING{
+    display: flex;
+    flex-direction: column;
+}
+.Contents_Below_Right_ARCHIVE_Cover{
+    display: flex;
+    flex-direction: column;
+    margin-top:3rem;
+}
+.Picture_Contents_Below_Right_NAME{
+    max-height:200px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+.Contents_Below_Right_NAME_Title,
+.Contents_Below_Right_RANKING_Title,
+.Contents_Below_Right_ARCHIVE_Title{
+    font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+.h6{/*user agent sheetの解除が面倒なのでhタグに同名のクラスを指定*/
+    font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    text-align: center;
+}
+.Picture_Contents_Below_Right_RANKING{
+    width:100%;
+    max-width: 300px;
+    object-fit: contain;
+    margin: 1%;
+}
+.h7{/*user agent sheetの解除が面倒なのでhタグに同名のクラスを指定*/
+    font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    margin-bottom: 2%;
+}
+table{
+    border-collapse: collapse;
+}
+table.Contents_Below_Right_ARCHIVE_List td{
+    border-width: 1px 0px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    padding: 1.5rem;
+}
+.Contents_Below_Right_ARCHIVE_Contents{
+    font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    margin: 0.8rem 0rem 0.8rem 0rem;
+}
+
+@media screen and (max-width:768px){
+    table.Contents_Below_Right_ARCHIVE_List td{
+        border-width: 1px 0px;
+        border-color: rgb(0, 0, 0);
+        border-style: solid;
+        padding-left: 1.5rem;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+    }
+    .Contents_Below_Right_ARCHIVE_List{
+        width: 100%;
+        margin: auto;
+    }
+}
+
+/*section5*/
+.Footer_Cover{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(211, 211, 211);
+    margin-top:10rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+.CENTERCONTROLL_FOOT{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    max-width: 1200px;
+}
+@media screen and (max-width: 768px){
+    .CENTERCONTROLL_FOOT{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.Footer_Cover_Left,
+.Footer_Cover_Center,
+.Footer_Cover_Right{
+    display: flex;
+    flex-direction: column;
+    flex-basis:33.33%;
+    padding:2%;
+}
+.Footer_Cover_Left_List{
+    display: flex;
+    flex-direction: column;
+}
+.Footer_Cover_Center_List{
+    width: 100%;
+}
+.Footer_Cover_Title{
+    font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+
+}
+.h9{/*user agent sheetの解除が面倒なのでhタグに同名のクラスを指定*/
+    font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    color: black;
+    font-weight: lighter;
+    margin-right: 10%;
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
+@media screen and (max-width: 768px){
+    .h9{/*user agent sheetの解除が面倒なのでhタグに同名のクラスを指定*/
+        margin-right: 0%;
+    }
+}
+.h10{/*user agent sheetの解除が面倒なのでhタグに同名のクラスを指定*/
+    font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    color: black;
+    font-weight: lighter;
+    text-decoration: none;
+}
+table.Footer_Cover_Center_List tr.h11table{
+    width:100%;
+}
+table.Footer_Cover_Center_List td{
+    border-width: 1px 0px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    padding: 0.5rem;
+    width: 100%;
+}
+.h11{/*user agent sheetの解除が面倒なのでhタグに同名のクラスを指定*/
+    font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+    font-size: 14px;
+    color: black;
+    font-weight: lighter;
+    text-decoration: none;
+}
+.h12{/*user agent sheetの解除が面倒なのでhタグに同名のクラスを指定*/
+    font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    color: black;
+    font-weight: lighter;
+}
